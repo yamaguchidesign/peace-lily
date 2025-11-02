@@ -1,0 +1,148 @@
+/* タブレット対応用メディアクエリ（481px - 768px） */
+@media (min-width: 481px) and (max-width: 768px) {
+
+    /* ヘッダー */
+    .header {
+        padding: 0 20px;
+        top: 16px;
+    }
+
+    .header__nav-links {
+        gap: 8px;
+        padding-right: 12px;
+    }
+
+    .header__nav-item {
+        font-size: 12px;
+    }
+
+    .header__reserve {
+        padding: 8px 16px;
+    }
+
+    .header__reserve span {
+        font-size: 12px;
+    }
+
+    /* KVセクション */
+    .kv {
+        height: 70vh;
+    }
+
+    /* Conceptセクション */
+    .concept {
+        margin: 80px 20px 0;
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .concept__image {
+        grid-column: 1;
+    }
+
+    .concept__text-container {
+        grid-column: 1;
+    }
+
+    .concept__decorative-text--whatwe {
+        right: -10px;
+        bottom: -110px;
+    }
+
+    /* Our Salonセクション */
+    .our-salon {
+        margin: 160px 20px 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .our-salon__text {
+        grid-column: 1;
+    }
+
+    .our-salon__image {
+        grid-column: 1;
+    }
+
+    .our-salon__decorative-text--our-info {
+        position: absolute;
+        right: -10px;
+        bottom: -120px;
+    }
+
+    /* Servicesセクション */
+    .services {
+        margin: 160px 20px 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .services__title {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .services__image {
+        grid-column: 1;
+    }
+
+    .services__list {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+
+    .services__item {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        grid-column: 1;
+    }
+
+    .services__item-price {
+        align-self: flex-start;
+    }
+
+    .services__decorative-text--cuts-color {
+        right: -24px;
+        bottom: -152px;
+    }
+
+    /* Find us / Hoursセクション */
+    .find-hours {
+        margin: 160px 20px 0;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .find-hours__image {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .find-hours__content {
+        grid-column: 1;
+    }
+
+    /* Reservationセクション */
+    .reservation {
+        margin-top: 80px;
+        margin-inline: auto;
+        width: calc(100% - 80px);
+    }
+
+    .reservation__box {
+        padding: 24px 20px;
+    }
+
+    /* フッター */
+    .footer {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+
+    .footer__content {
+        margin: 40px 20px;
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+}

@@ -1,0 +1,194 @@
+/* スマートフォン対応用メディアクエリ（最大480px） */
+@media (max-width: 480px) {
+
+    /* ヘッダー */
+    .header {
+        padding: 0 16px;
+        top: 12px;
+    }
+
+    .header__nav-links {
+        gap: 6px;
+        padding-right: 8px;
+    }
+
+    .header__nav-item {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    .header__reserve {
+        padding: 6px 12px;
+        gap: 4px;
+    }
+
+    .header__reserve span {
+        font-size: 11px;
+        letter-spacing: 0.5px;
+    }
+
+    /* KVセクション */
+    .kv {
+        height: 70vh;
+    }
+
+    /* Conceptセクション */
+    .concept {
+        margin: 80px 16px 0;
+        gap: 16px;
+        grid-template-columns: 1fr;
+    }
+
+    .concept__image {
+        grid-column: 1;
+    }
+
+    .concept__text-container {
+        grid-column: 1;
+    }
+
+    .concept__title {
+        font-size: 32px;
+    }
+
+    .concept__text {
+        font-size: 14px;
+    }
+
+    .concept__decorative-text--whatwe {
+        right: -10px;
+        bottom: -110px;
+    }
+
+    /* Our Salonセクション */
+    .our-salon {
+        margin: 160px 16px 0;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .our-salon__text {
+        grid-column: 1;
+    }
+
+    .our-salon__image {
+        grid-column: 1;
+    }
+
+    .our-salon__title {
+        font-size: 32px;
+    }
+
+    .our-salon__decorative-text--our-info {
+        position: absolute;
+        right: -10px;
+        bottom: -120px;
+    }
+
+    /* Servicesセクション */
+    .services {
+        margin: 160px 16px 0;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .services__title {
+        grid-column: 1;
+        width: 100%;
+        font-size: 32px;
+    }
+
+    .services__image {
+        grid-column: 1;
+    }
+
+    .services__list {
+        grid-column: 1;
+        grid-template-columns: 1fr;
+    }
+
+    .services__item {
+        display: flex;
+        flex-direction: row;
+        gap: 24px;
+        grid-column: 1;
+    }
+
+    .services__item-name {
+        width: 40%;
+    }
+
+    .services__item-price {
+        align-self: flex-start;
+    }
+
+    .services__decorative-text--cuts-color {
+        right: -74px;
+        bottom: -132px;
+    }
+
+    /* Find us / Hoursセクション */
+    .find-hours {
+        margin: 160px 16px 0;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .find-hours__image {
+        grid-column: 1;
+        width: 100%;
+    }
+
+    .find-hours__content {
+        grid-column: 1;
+    }
+
+    .find-us__title,
+    .hours__title {
+        font-size: 32px;
+    }
+
+    .find-hours__text,
+    .find-hours__hours {
+        width: 100%;
+        font-size: 14px;
+    }
+
+    /* Reservationセクション */
+    .reservation {
+        margin: 60px 16px 0;
+        width: calc(100% - 32px);
+    }
+
+    .reservation__box {
+        padding: 20px 16px;
+    }
+
+    .reservation__title {
+        font-size: 36px;
+    }
+
+    .reservation__text {
+        font-size: 14px;
+    }
+
+    /* フッター */
+    .footer {
+        margin-top: 0;
+        padding: 40px 0;
+    }
+
+    .footer__content {
+        margin: 20px 16px;
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .footer__title {
+        font-size: 18px;
+    }
+
+    .footer__text {
+        font-size: 12px;
+    }
+}

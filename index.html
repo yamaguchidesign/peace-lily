@@ -1,60 +1,227 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>figma mcp 練習</title>
+    <title>Peace Lily Hair Salon</title>
     <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="frame">
-      <div class="kv-image"></div>
-      <div class="header">
-        <div class="nav-container">
-          <div class="nav-item">BLOG</div>
-          <div class="nav-item">ABOUT</div>
-          <div class="nav-item">STAFF</div>
-          <div class="nav-item">STYLE</div>
-          <div class="nav-item">RECRUIT</div>
+    <link rel="stylesheet" href="style-tablet.css" />
+    <link rel="stylesheet" href="style-mobile.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <!-- 左端の縦書きテキスト -->
+    <!-- <div class="vertical-text">
+        <p>Be kind to your hair, be kind to yourself. Be kind to your hair, be kind to yourself.Be kind to your
+            hair, be kind to yourself. Be kind to your hair, be kind to yourself.</p>
+    </div> -->
+
+    <!-- ヘッダー -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav-links">
+                <span class="header__nav-item">BLOG</span>
+                <span class="header__nav-item">ABOUT</span>
+                <span class="header__nav-item">STAFF</span>
+                <span class="header__nav-item">STYLE</span>
+                <span class="header__nav-item">RECRUIT</span>
+            </div>
+            <div class="header__instagram">
+                <img src="http://localhost:3845/assets/9598edd3a0eade8a9a72bbe9848cbbfebd9eb541.png" alt="Instagram" />
+            </div>
+        </nav>
+        <div class="header__reserve">
+            <img class="header__reserve-icon"
+                src="http://localhost:3845/assets/b537f84a9167adf7d5b477b86ea484a50b266266.svg" alt="reserve-icon" />
+            <span>RESERVE</span>
         </div>
-        <div class="instagram-logo"></div>
-        <div class="reserve-button">
-          <div class="reserve-icon">
-            <svg
-              width="12.5"
-              height="13.25"
-              viewBox="0 0 12.5 13.25"
-              fill="none"
-            >
-              <path
-                d="M2 1.5h11v11.5H2z"
-                fill="none"
-                stroke="#432002"
-                stroke-width="1.5"
-              />
-              <path
-                d="M2.5 0h6v2.5h-6z"
-                fill="none"
-                stroke="#432002"
-                stroke-width="2"
-              />
-              <path
-                d="M2 4h11v3H2z"
-                fill="none"
-                stroke="#432002"
-                stroke-width="2"
-              />
-              <path
-                d="M4 8h4v2H4z"
-                fill="none"
-                stroke="#432002"
-                stroke-width="2"
-              />
-            </svg>
-          </div>
-          <span>RESERVE</span>
+    </header>
+
+    <!-- KVセクション -->
+    <section class="kv">
+        <img class="kv__image" src="http://localhost:3845/assets/f829d378ad2f7adb065e1e896595635d3d6a22ed.png"
+            alt="Peace Lily Hair Salon" />
+    </section>
+
+    <!-- Conceptセクション -->
+    <section class="concept">
+        <div class="concept__image">
+            <img class="concept__image-img"
+                src="http://localhost:3845/assets/02daa82daa36e9e035d99a2b4953327609421e44.png" alt="Salon interior" />
         </div>
-      </div>
-    </div>
-  </body>
+        <div class="concept__text-container">
+            <h2 class="concept__title">Concept</h2>
+            <p class="concept__text">Everything we do and everything we create is based on what we believe in — that
+                helping others look beautiful is good, but helping them believe they are beautiful is life-changing.
+            </p>
+            <div class="concept__button">
+                <span>MORE</span>
+                <img src="http://localhost:3845/assets/91d94f064d14289f54dac92d4ec2d7184280aec9.svg" alt="arrow" />
+            </div>
+        </div>
+        <div class="concept__decorative-text--whatwe">
+            <img src="images/what-we-think.svg" alt="Whatwe Think." />
+        </div>
+    </section>
+
+
+    <!-- Our Salonセクション -->
+    <section class="our-salon">
+        <div class="our-salon__text">
+            <h2 class="our-salon__title">Our Salon</h2>
+            <ul class="our-salon__list">
+                <li class="our-salon__item">
+                    <div class="our-salon__item-left">
+                        <span class="our-salon__number">01</span>
+                        <span class="our-salon__label">Price</span>
+                    </div>
+                    <img class="our-salon__item-arrow" src="images/arrow.svg" alt="arrow" />
+                </li>
+                <li class="our-salon__item">
+                    <div class="our-salon__item-left">
+                        <span class="our-salon__number">02</span>
+                        <span class="our-salon__label">Staff</span>
+                    </div>
+                    <img class="our-salon__item-arrow" src="images/arrow.svg" alt="arrow" />
+                </li>
+                <li class="our-salon__item">
+                    <div class="our-salon__item-left">
+                        <span class="our-salon__number">03</span>
+                        <span class="our-salon__label">Access</span>
+                    </div>
+                    <img class="our-salon__item-arrow" src="images/arrow.svg" alt="arrow" />
+                </li>
+                <li class="our-salon__item">
+                    <div class="our-salon__item-left">
+                        <span class="our-salon__number">04</span>
+                        <span class="our-salon__label">Recruit</span>
+                    </div>
+                    <img class="our-salon__item-arrow" src="images/arrow.svg" alt="arrow" />
+                </li>
+            </ul>
+        </div>
+        <div class="our-salon__image">
+            <img class="our-salon__image-img" src="images/shop.png" alt="Our Salon" />
+        </div>
+        <div class="our-salon__decorative-text--our-info">
+            <img src="images/our-info.svg" alt="Our Infomation." />
+        </div>
+
+    </section>
+
+    <!-- Servicesセクション -->
+    <section class="services">
+        <h2 class="services__title">Services</h2>
+        <div class="services__image">
+            <img src="images/hair.png" alt="Services" />
+        </div>
+        <ul class="services__list">
+            <li class="services__item">
+                <span class="services__item-name">Hair grooming</span>
+                <span class="services__item-price">from $55</span>
+            </li>
+            <li class="services__item">
+                <span class="services__item-name">Extensions</span>
+                <span class="services__item-price">from $150</span>
+            </li>
+            <li class="services__item">
+                <span class="services__item-name">Color</span>
+                <span class="services__item-price">from $85</span>
+            </li>
+            <li class="services__item">
+                <span class="services__item-name">Lash & Brow</span>
+                <span class="services__item-price">from $70</span>
+            </li>
+            <li class="services__item">
+                <span class="services__item-name">Treatments</span>
+                <span class="services__item-price">from $65</span>
+            </li>
+        </ul>
+        <div class="services__decorative-text--cuts-color">
+            <img src="images/cuts-color.svg" alt="Cuts, color, skin..." />
+        </div>
+    </section>
+
+
+    <!-- Find us / Hoursセクション -->
+    <section class="find-hours">
+        <div class="find-hours__image">
+            <img src="http://localhost:3845/assets/64250fce30c078fc77d9b04d28d6994c4959ff98.png" alt="Location" />
+        </div>
+        <div class="find-hours__content">
+            <div class="find-hours__find-us">
+                <h3 class="find-us__title">Find us</h3>
+                <p class="find-us__text">609 SE 13th Ct, Cape Coral, Florida, 33990</p>
+            </div>
+            <div class="find-hours__hours">
+                <h3 class="hours__title">Hours</h3>
+                <div class="hours__content">
+                    <p>Tuesday: 10-6</p>
+                    <p>Wednesday: 9-8</p>
+                    <p>Thursday: 12-8</p>
+                    <p>Friday: 9-8</p>
+                    <p>Saturday: 9-6</p>
+                    <p>Closed Sunday + Monday</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reservationセクション -->
+    <section class="reservation">
+        <div class="reservation__box">
+            <div class="reservation__header">
+                <span class="reservation__title">Reservation </span>
+                <img class="reservation__arrow-icon" src="images/arrow.svg" alt="arrow" />
+
+            </div>
+            <div class="reservation__text">
+                <p>We're currently open!</p>
+                <p>Working days 8:00 - 20:00 & Sundays 8:00 - 16:00</p>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- フッター -->
+    <footer class="footer">
+        <div class="footer__content">
+            <div class="footer__item">
+                <h3 class="footer__title">Hours</h3>
+                <div class="footer__text">
+                    <p>Tuesday: 10-6</p>
+                    <p>Wednesday: 9-8</p>
+                    <p>Thursday: 12-8</p>
+                    <p>Friday: 9-8</p>
+                    <p>Saturday: 9-6</p>
+                    <p>Closed Sunday + Monday</p>
+                </div>
+            </div>
+            <div class="footer__item">
+                <h3 class="footer__title">Find us</h3>
+                <div class="footer__text">
+                    <p>609 SE 13th Ct, Cape</p>
+                    <p>Coral, Florida,</p>
+                    <p>33990</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer__logo">
+            <img src="images/footer-logo.svg" alt="Peace Lily" />
+        </div>
+        <div class="footer__decoration">
+            <img class="footer__decoration-img" src="images/circle-text.png" alt="decoration" />
+        </div>
+    </footer>
+
+
+
+
+</body>
+
 </html>
