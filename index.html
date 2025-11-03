@@ -31,36 +31,39 @@
                 <span class="header__nav-item">RECRUIT</span>
             </div>
             <div class="header__instagram">
-                <img src="http://localhost:3845/assets/9598edd3a0eade8a9a72bbe9848cbbfebd9eb541.png" alt="Instagram" />
+                <img src="images/instagram-logo.png" alt="Instagram" />
             </div>
         </nav>
         <div class="header__reserve">
-            <img class="header__reserve-icon"
-                src="http://localhost:3845/assets/b537f84a9167adf7d5b477b86ea484a50b266266.svg" alt="reserve-icon" />
+            <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.75 9.5H2.75V7.5H6.75V9.5Z" fill="#432002" />
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M9.25 0C9.80229 0 10.25 0.447715 10.25 1V2.75H10.75C11.7165 2.75 12.5 3.5335 12.5 4.5V11.5C12.5 12.4665 11.7165 13.25 10.75 13.25H1.75C0.783501 13.25 5.95397e-07 12.4665 0 11.5V4.5C1.15047e-07 3.5335 0.783501 2.75 1.75 2.75H2.25V1C2.25 0.447715 2.69772 0 3.25 0C3.80228 0 4.25 0.447715 4.25 1V2.75H8.25V1C8.25 0.447715 8.69771 0 9.25 0ZM1.5 11.5C1.5 11.6381 1.61193 11.75 1.75 11.75H10.75C10.8881 11.75 11 11.6381 11 11.5V6.53613H1.5V11.5Z"
+                    fill="#432002" />
+            </svg>
             <span>RESERVE</span>
         </div>
     </header>
 
     <!-- KVセクション -->
     <section class="kv">
-        <img class="kv__image" src="http://localhost:3845/assets/f829d378ad2f7adb065e1e896595635d3d6a22ed.png"
-            alt="Peace Lily Hair Salon" />
+        <img class="kv__image" src="images/kv_1-photo.png" alt="" />
+        <img class="kv__image-overlay" src="images/logo.svg" alt="Peace Lily Hair Salon" />
     </section>
 
     <!-- Conceptセクション -->
     <section class="concept">
         <div class="concept__image">
-            <img class="concept__image-img"
-                src="http://localhost:3845/assets/02daa82daa36e9e035d99a2b4953327609421e44.png" alt="Salon interior" />
+            <img class="concept__image-img" src="images/concept.png" alt="Salon interior" />
         </div>
         <div class="concept__text-container">
-            <h2 class="concept__title">Concept</h2>
+            <h2 class="concept__title slide-up-reveal"><span>Concept</span></h2>
             <p class="concept__text">Everything we do and everything we create is based on what we believe in — that
                 helping others look beautiful is good, but helping them believe they are beautiful is life-changing.
             </p>
             <div class="concept__button">
                 <span>MORE</span>
-                <img src="http://localhost:3845/assets/91d94f064d14289f54dac92d4ec2d7184280aec9.svg" alt="arrow" />
+                <img src="images/arrow-white.svg" alt="arrow" class="concept__button-arrow" />
             </div>
         </div>
         <div class="concept__decorative-text--whatwe">
@@ -72,7 +75,7 @@
     <!-- Our Salonセクション -->
     <section class="our-salon">
         <div class="our-salon__text">
-            <h2 class="our-salon__title">Our Salon</h2>
+            <h2 class="our-salon__title slide-up-reveal"><span>Our Salon</span></h2>
             <ul class="our-salon__list">
                 <li class="our-salon__item">
                     <div class="our-salon__item-left">
@@ -115,7 +118,7 @@
 
     <!-- Servicesセクション -->
     <section class="services">
-        <h2 class="services__title">Services</h2>
+        <h2 class="services__title slide-up-reveal"><span>Services</span></h2>
         <div class="services__image">
             <img src="images/hair.png" alt="Services" />
         </div>
@@ -150,15 +153,15 @@
     <!-- Find us / Hoursセクション -->
     <section class="find-hours">
         <div class="find-hours__image">
-            <img src="http://localhost:3845/assets/64250fce30c078fc77d9b04d28d6994c4959ff98.png" alt="Location" />
+            <img src="images/find-hours.png" alt="Location" />
         </div>
         <div class="find-hours__content">
             <div class="find-hours__find-us">
-                <h3 class="find-us__title">Find us</h3>
+                <h3 class="find-us__title slide-up-reveal"><span>Find us</span></h3>
                 <p class="find-us__text">609 SE 13th Ct, Cape Coral, Florida, 33990</p>
             </div>
             <div class="find-hours__hours">
-                <h3 class="hours__title">Hours</h3>
+                <h3 class="hours__title slide-up-reveal"><span>Hours</span></h3>
                 <div class="hours__content">
                     <p>Tuesday: 10-6</p>
                     <p>Wednesday: 9-8</p>
@@ -176,7 +179,7 @@
     <section class="reservation">
         <div class="reservation__box">
             <div class="reservation__header">
-                <span class="reservation__title">Reservation </span>
+                <h3 class="reservation__title slide-up-reveal"><span>Reservation </span></h3>
                 <img class="reservation__arrow-icon" src="images/arrow.svg" alt="arrow" />
 
             </div>
@@ -212,7 +215,7 @@
             </div>
         </div>
         <div class="footer__logo">
-            <img src="images/footer-logo.svg" alt="Peace Lily" />
+            <img src="images/logo.svg" alt="Peace Lily" />
         </div>
         <div class="footer__decoration">
             <img class="footer__decoration-img" src="images/circle-text.png" alt="decoration" />
@@ -222,6 +225,7 @@
 
 
 
+    <script src="scroll-reveal.js"></script>
 </body>
 
 </html>
